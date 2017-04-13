@@ -71,19 +71,16 @@ class SSM_Industries_Registrations {
 			'label'                 => __( 'Industry', 'ssm' ),
 			'labels'                => $labels,
 			'supports'              => array( 'title', 'thumbnail', 'editor' ),
-			'hierarchical'          => false,
-			'public'                => false,
-			'show_ui'               => true,
-			'show_in_menu'          => true,
-			'menu_position'         => 5,
+			'public'          			=> false,
+			'capability_type' 			=> 'page',
+			'publicly_queriable'		=> true,
+			'show_ui' 							=> true,
+			'show_in_nav_menus' 		=> false,
+			'rewrite'         			=> false,
+			'has_archive'						=> false,
+			'exclude_from_search'		=> true,
 			'menu_icon'             => 'dashicons-businessman',
-			'show_in_admin_bar'     => true,
-			'show_in_nav_menus'     => false,
-			'can_export'            => true,
-			'has_archive'           => false,		
-			'exclude_from_search'   => false,
-			'publicly_queryable'    => true,
-			'capability_type'       => 'page',
+
 		);
 
 		$args = apply_filters( 'ssm_industries_args', $args );
